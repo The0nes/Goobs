@@ -14,12 +14,18 @@ void print();
 };
 
 int main() {
-gooba g1(200, 200); //with a constructor it's just one line!
+gooba g1(200, 200);
+gooba g2(250,400);
+gooba g3(400, 700);//with a constructor it's just one line!
 while (1) {//game loop!
 //physics
 g1.walk();
+g2.walk();
+g3.walk();
 //render section!
 g1.print();
+g2.print();
+g3.print();
 system("pause");
 }
 }
@@ -43,5 +49,5 @@ xPosition += 10;
 }
 
 void gooba::print() {
-cout << "Im a goomba and I'm at " << xPosition << "," << yPosition << endl;
+cout << "Im a gooba and I'm at " << xPosition << "," << yPosition << endl;
 }
